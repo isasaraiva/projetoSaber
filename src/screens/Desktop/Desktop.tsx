@@ -53,7 +53,7 @@ export const Desktop = (): JSX.Element => {
   href="mailto:suportecis@sfiec.org.br"
   className="[font-family:'Libre_Franklin',Helvetica] pl-10 font-normal text-[#fafbf7] text-[16px] tracking-[0] pt-0 leading-[normal] underline cursor-pointer"
 >
-  suportecis@sfiec.org.br
+  inovacaosesi@sfiec.org.br
 </a>
                 </div>
                 
