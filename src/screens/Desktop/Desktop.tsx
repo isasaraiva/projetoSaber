@@ -29,18 +29,29 @@ export const Desktop = (): JSX.Element => {
           src="/group-5.png"
         >*/}
 
-        <div className="absolute top-4 left-[700px] w-[351px] h-[22px] bg-[#397bff]">
+        <div className="absolute top-4 pb-10 left-[200px] w-[351px] h-[42px] bg-[#397bff]">
          
 
-            <div className="flex items-center  right-[35px]">
-      <img
-        className="w-[100px] h-[100px]"
-        alt="Partner logo 1"
-        src="/group-9.png"
-      />
-      
-      
-    </div>
+            <div className="flex justify-items-stretch  right-[35px]">
+               <div>
+                <img
+                   className="w-[100px] h-[100px] z-10"
+                   alt="Partner logo 1"
+                  src="/group-9.png"
+                />
+               </div>
+                <div>
+                  <p className="[font-family:'Libre_Franklin',Helvetica] p-10 font-normal text-[#c5b3ff] text-[20px] tracking-[0] pt-0 leading-[normal]">
+              Quer saber mais?
+        
+            </p>
+            <p>
+              Entre em contato conosco
+            </p>
+                </div>
+                
+             </div>
+            
 
           
         </div>

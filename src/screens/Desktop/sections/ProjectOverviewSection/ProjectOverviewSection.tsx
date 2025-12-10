@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Card, CardContent } from "../../../../components/ui/card";
 
@@ -15,8 +15,10 @@ const objectives = [
 ];
 
 export const ProjectOverviewSection = (): JSX.Element => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <section className="relative w-full bg-[#387bfe] py-8 px-4">
+    <section id="project-overview" className="relative w-full bg-[#387bfe] py-8 px-4">
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 mb-16">
           <div className="flex-1 lg:max-w-[600px] lg:ml-[132px]">
@@ -81,12 +83,16 @@ export const ProjectOverviewSection = (): JSX.Element => {
         </div>
 
         <div className="flex justify-center px-4 lg:px-[130px] mt-16">
-          <Card className="w-full max-w-[1176px] bg-[#7248d8] rounded-[40px] border-0 shadow-[0px_4px_22.1px_#00000040] overflow-hidden">
+          <Card 
+            className="w-full max-w-[1176px] rounded-[40px] border-0 cursor-pointer"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
             <CardContent className="p-0">
               <img
-                className="w-full h-[418px] object-cover"
+                className="w-full h-[418px] object-cover transition-opacity duration-300"
                 alt="Pattern texto"
-                src="/pattern-texto-ondulado-02-azul-2.png"
+                src={isHovered ? "/cardRoxo.png" : "/CardBranco.png"}
               />
             </CardContent>
           </Card>

@@ -39,66 +39,73 @@ const targetAudiences = [
 ];
 
 export const ImageWrapperSection = (): JSX.Element => {
-  return (
-    <section className="relative w-full bg-[#84e2f7] overflow-hidden py-16 px-4">
-      <img
-        className="absolute w-[129.10%] h-[127.43%] top-[-4.90%] left-0 pointer-events-none"
-        alt="Vector"
-        src="/vector-1.svg"
-      />
+	return (
+		<section
+			className="relative w-full bg-[#84e2f7] overflow-hidden py-16 px-4"
+			id="eixosTematicos"
+		>
+			<img
+				className="absolute w-[129.10%] h-[127.43%] top-[-4.90%] left-0 pointer-events-none"
+				alt="Vector"
+				src="/vector-1.svg"
+			/>
 
-      <div className="relative max-w-[1440px] mx-auto">
-        <h2 className="text-center [font-family:'Neulis_Cursive-SemiBold',Helvetica] font-semibold text-[#0346c8] text-[32px] tracking-[0] leading-[26px] mb-12">
-          Eixos Temáticos
-        </h2>
+			<div className="relative max-w-[1440px] mx-auto ">
+				<h2 className="text-center [font-family:'Neulis_Cursive-SemiBold',Helvetica] font-semibold text-[#0346c8] text-[32px] tracking-[0] leading-[26px] mb-12">
+					Eixos Temáticos
+				</h2>
 
-       <div>
-        <img src="eixosTematicos.png" alt="" />
-       </div>
+				<div className="mb-12 justify-center flex">
+					<img
+						className="w-[80%]"
+						src="eixosTematicos.png"
+						alt=""
+					/>
+				</div>
 
-        <div className="mb-24 pt-10">
-          <h2 className="text-center [font-family:'Neulis_Cursive-Bold',Helvetica] font-bold text-[#0346c8] text-[32px] tracking-[0] leading-normal mb-12">
-            Público-Alvo
-          </h2>
+				<div className="mb-24 pt-10">
+					<h2 className="text-center [font-family:'Neulis_Cursive-Bold',Helvetica] font-bold text-[#0346c8] text-[32px] tracking-[0] leading-normal mb-12">
+						Público-Alvo
+					</h2>
 
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 px-8">
-            <div className="flex-1 max-w-[255px]">
-              <p className="[font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] text-2xl tracking-[0] leading-normal text-left lg:text-right">
-                {targetAudiences[0]}
-              </p>
-            </div>
+					<div className="flex flex-col lg:flex-row items-center justify-center gap-8 px-8">
+						<div className="flex-1 max-w-[255px]">
+							<p className="[font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] text-2xl tracking-[0] leading-normal text-left lg:text-right">
+								{targetAudiences[0]}
+							</p>
+						</div>
 
-            <div className="flex-shrink-0">
-              <img
-                className="w-[372px] h-52"
-                alt="Target Audience"
-                src="/frame-175.svg"
-              />
-            </div>
+						<div className="flex-shrink-0">
+							<img
+								className="w-[372px] h-52"
+								alt="Target Audience"
+								src="/frame-175.svg"
+							/>
+						</div>
 
-            <div className="flex-1 max-w-[302px] flex flex-col gap-4">
-              <p className="[font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] text-2xl tracking-[0] leading-normal">
-                {targetAudiences[1]}
-              </p>
-              <p className="[font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] text-2xl tracking-[0] leading-normal">
-                {targetAudiences[2]}
-              </p>
-            </div>
-          </div>
-        </div>
+						<div className="flex-1 max-w-[302px] flex flex-col gap-4">
+							<p className="[font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] text-2xl tracking-[0] leading-normal">
+								{targetAudiences[1]}
+							</p>
+							<p className="[font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] text-2xl tracking-[0] leading-normal">
+								{targetAudiences[2]}
+							</p>
+						</div>
+					</div>
+				</div>
 
-        <div className="px-8">
-          <h2 className="text-center [font-family:'Neulis_Cursive-Bold',Helvetica] font-bold text-[#0346c8] text-[32px] tracking-[0] leading-normal mb-8">
-            Nossa Missão
-          </h2>
+				{/* <div className="px-8">
+					<h2 className="text-center [font-family:'Neulis_Cursive-Bold',Helvetica] font-bold text-[#0346c8] text-[32px] tracking-[0] leading-normal mb-8">
+						Nossa Missão
+					</h2>
 
-          <p className="max-w-[813px] mx-auto [font-family:'Libre_Franklin',Helvetica] font-normal text-[#0346c8] text-2xl text-center tracking-[0] leading-normal">
-            Equipar o maior número de pessoas com o poder de entender e aplicar
-            bons hábitos e conhecimentos em segurança, garantindo que os
-            benefícios dessa jornada se estendam por toda a vida.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
+					<p className="max-w-[813px] mx-auto [font-family:'Libre_Franklin',Helvetica] font-normal text-[#0346c8] text-2xl text-center tracking-[0] leading-normal">
+						Equipar o maior número de pessoas com o poder de entender e aplicar
+						bons hábitos e conhecimentos em segurança, garantindo que os
+						benefícios dessa jornada se estendam por toda a vida.
+					</p>
+				</div> */}
+			</div>
+		</section>
+	);
 };

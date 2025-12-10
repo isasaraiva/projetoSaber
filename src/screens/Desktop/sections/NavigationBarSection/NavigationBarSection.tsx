@@ -18,6 +18,32 @@ const partnerLogos = [
 ];
 
 export const NavigationBarSection = (): JSX.Element => {
+  const [selectedNav, setSelectedNav] = React.useState<string>("Inicio");
+
+  const handleNavClick = (linkText: string) => {
+    setSelectedNav(linkText);
+    if (linkText === "O Projeto") {
+      const section = document.getElementById("project-overview");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+        
+      }
+    }
+     if (linkText === "Eixos Temáticos") {
+      const section = document.getElementById("eixosTematicos");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+        
+      }
+    }
+     if (linkText === "Inicio") {
+      const section = document.getElementById("inicio");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+        
+      }
+    }
+  };
   return (
     <nav className="fixed top-0 left-0 z-50 w-full h-[122px] bg-[#397bff] flex items-center justify-between px-[153px]">
   <div className="flex-shrink-0">
@@ -28,11 +54,14 @@ export const NavigationBarSection = (): JSX.Element => {
     {navLinks.map((link, index) => (
       <div
         key={index}
-        className={`flex items-center justify-center [font-family:'Poppins',Helvetica] ${
-          link.active
-            ? "font-bold text-[#d5f48c]"
+        onClick={() => handleNavClick(link.text)}
+        className={`flex items-center justify-center [font-family:'Poppins',Helvetica] text-base tracking-[0] leading-[normal] whitespace-nowrap cursor-pointer ${
+          selectedNav === link.text
+            ? link.text === "O Projeto"
+              ? "font-bold text-[#d5f48c] text-green-500"
+              : "font-bold text-[#d5f48c]"
             : "font-normal text-[#ededed]"
-        } text-base tracking-[0] leading-[normal] whitespace-nowrap cursor-pointer`}
+        }`}
       >
         {link.text}
       </div>

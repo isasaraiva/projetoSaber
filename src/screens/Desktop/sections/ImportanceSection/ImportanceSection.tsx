@@ -2,24 +2,26 @@ import React from "react";
 
 export const ImportanceSection = (): JSX.Element => {
   return (
-    <section className="relative w-full bg-[#f3f9f9] py-28 px-4">
+    <section className="relative w-full bg-[#f3f9f9] py-28 px-4 ">
       <div className="max-w-[1440px] mx-auto">
-        <div className="relative w-full max-w-[1181px] mx-auto mb-20">
+        <div className="relative w-full max-w-[1181px] mx-auto ">
           <img
             className="w-full h-auto"
             alt="Gráfico da Jornada"
             src="/Grafico da Jornada.png"
           />
         </div>
+<div className="mb-16 flex flex-col items-center z-10"> 
+  <div> <img className="w-20 h-20 mix-blend-multiply" src="team.gif" /></div>
+       
+        <div className="flex justify-center ">
 
-        <div className="flex justify-center mb-16">
-          
-            <img className="w-20 h-20 mix-blend-multiply" src="team.gif" />
-          
           <h2 className="max-w-[489px] [font-family:'Neulis_Cursive-SemiBold',Helvetica] font-semibold text-[#0346c8] text-[49px] text-center tracking-[1.50px] leading-[56px]">
             Por que o projeto é importante?
           </h2>
         </div>
+</div>
+
 
         <div className="flex justify-center">
           <p className="max-w-[991px] [font-family:'Libre_Franklin',Helvetica] font-normal text-[#0346c8] text-[27.8px] text-center tracking-[0] leading-[normal]">

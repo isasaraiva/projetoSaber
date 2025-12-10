@@ -161,7 +161,12 @@ export const HistorySection = (): JSX.Element => {
         </div>
 
         <div className="relative max-w-[1149px] mx-auto">
+          <div className="flex justify-center mb-[153px]">
+            <img src="/frameAriosto.png" alt="" />
+          </div>
+            
           <div className="flex items-start gap-[20px] mb-[84px]">
+            
             
             <img
               className="w-[100px] h-[100px] flex-shrink-0"
@@ -174,15 +179,17 @@ export const HistorySection = (): JSX.Element => {
               O Letramento em Saúde capacita estudantes a transformar
               conhecimento em atitudes saudáveis para a vida toda.
             </p>
-            <div className="flex justify-end">
-            <Button className="bg-[#7248d8] hover:bg-[#7248d8]/90 rounded-[18px] h-[66px] px-[17px] gap-[17px]">
-              <img
-                className="w-[54px] h-auto object-cover mix-blend-multiply"
+            <div className="flex justify-end pt-24">
+
+              <div>
+                <img
+                className="w-[64px] h-auto object-cover mix-blend-multiply"
                 alt="Podcast"
                 src="/podcast.gif"
-                
-                
-              />
+                />
+              </div>
+            <Button className="bg-[#7248d8] hover:bg-[#7248d8]/90 rounded-[18px] h-[66px] px-[17px] gap-[17px]">
+            
               <span className="[font-family:'Libre_Franklin',Helvetica] font-bold text-white text-xl tracking-[0] leading-[normal] whitespace-nowrap">
                 Ouça como nasceu a ideia do projeto
               </span>
@@ -198,9 +205,11 @@ export const HistorySection = (): JSX.Element => {
               
             </div>
           </div>
-
           
+         
+           
         </div>
+        
       </div>
     </section>
   );
