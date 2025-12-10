@@ -7,7 +7,8 @@ export const HeroSection = (): JSX.Element => {
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-start">
           <div className="flex flex-col">
             <h1 className="[font-family:'Paytone_One',Helvetica] font-normal text-[#d5f48c] p-16 text-[49px] tracking-[1.50px] leading-[56px] max-w-[683px]">
-              Um movimento que transforma conhecimento em atitudes de cuidado,
+              Um movimento chamado{" "}
+              <span className="text-[#c391ea]">SABER</span> que transforma conhecimento em atitudes de cuidado,
               ensinando nossos alunos a cuidar de si, do outro e da comunidade.
             </h1>
 

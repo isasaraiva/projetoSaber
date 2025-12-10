@@ -29,25 +29,32 @@ export const Desktop = (): JSX.Element => {
           src="/group-5.png"
         >*/}
 
-        <div className="absolute top-4 pb-10 left-[200px] w-[351px] h-[42px] bg-[#397bff]">
+        <div className="absolute top-4 pb-8 left-[200px] w-[351px] h-[42px] bg-[#397bff]">
          
 
-            <div className="flex justify-items-stretch  right-[35px]">
+            <div className="flex justify-items-stretch right-[35px]">
                <div>
                 <img
-                   className="w-[100px] h-[100px] z-10"
+                   className="w-[100px] h-[95px] z-10"
                    alt="Partner logo 1"
                   src="/group-9.png"
                 />
                </div>
-                <div>
-                  <p className="[font-family:'Libre_Franklin',Helvetica] p-10 font-normal text-[#c5b3ff] text-[20px] tracking-[0] pt-0 leading-[normal]">
+              
+                <div className= "flex-col pt-2">
+                  <p className="[font-family:'Libre_Franklin',Helvetica] pl-10 font-normal text-[#c5b3ff] text-[20px] tracking-[0] pt-0 leading-[normal]">
               Quer saber mais?
         
             </p>
-            <p>
-              Entre em contato conosco
+            <p className="[font-family:'Libre_Franklin',Helvetica] pl-10 font-normal text-[#cbec85] text-[16px] tracking-[0] pt-0 leading-[normal]">
+              Entre em contato conosco:
             </p>
+            <a
+  href="mailto:suportecis@sfiec.org.br"
+  className="[font-family:'Libre_Franklin',Helvetica] pl-10 font-normal text-[#fafbf7] text-[16px] tracking-[0] pt-0 leading-[normal] underline cursor-pointer"
+>
+  suportecis@sfiec.org.br
+</a>
                 </div>
                 
              </div>

@@ -58,7 +58,7 @@ export const NavigationBarSection = (): JSX.Element => {
         className={`flex items-center justify-center [font-family:'Poppins',Helvetica] text-base tracking-[0] leading-[normal] whitespace-nowrap cursor-pointer ${
           selectedNav === link.text
             ? link.text === "O Projeto"
-              ? "font-bold text-[#d5f48c] text-green-500"
+              ? "font-bold text-[#d5f48c]"
               : "font-bold text-[#d5f48c]"
             : "font-normal text-[#ededed]"
         }`}

@@ -2,7 +2,7 @@ import React from "react";
 
 export const IllustrationSection = (): JSX.Element => {
   return (
-    <section className="relative w-full bg-[#0346c8] py-[283px] px-[83px]">
+    <section className="relative w-full bg-[#0346c8] py-[183px] px-[83px]">
       <div className="absolute w-[40px] h-[40px] top-[355px] right-[326px] bg-white rounded-[20px]" />
 
       <img

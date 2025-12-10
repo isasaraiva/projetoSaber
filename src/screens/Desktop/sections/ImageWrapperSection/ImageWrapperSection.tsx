@@ -94,17 +94,7 @@ export const ImageWrapperSection = (): JSX.Element => {
 					</div>
 				</div>
 
-				{/* <div className="px-8">
-					<h2 className="text-center [font-family:'Neulis_Cursive-Bold',Helvetica] font-bold text-[#0346c8] text-[32px] tracking-[0] leading-normal mb-8">
-						Nossa Missão
-					</h2>
-
-					<p className="max-w-[813px] mx-auto [font-family:'Libre_Franklin',Helvetica] font-normal text-[#0346c8] text-2xl text-center tracking-[0] leading-normal">
-						Equipar o maior número de pessoas com o poder de entender e aplicar
-						bons hábitos e conhecimentos em segurança, garantindo que os
-						benefícios dessa jornada se estendam por toda a vida.
-					</p>
-				</div> */}
+			
 			</div>
 		</section>
 	);
