@@ -27,16 +27,12 @@ export const HeroSection = (): JSX.Element => {
           </div>
 
           <div className="relative flex items-center justify-center lg:justify-end pt-12">
-            <img
-              className="absolute top-3 left-1 w-[130%] h-auto max-w-[1200px] opacity-50"
-              alt="Vector"
-              src="/vector.svg"
-            />
+          
 
             <img
               className="relative z-10 left-36 top-10 w-[130%] max-w-[784px] h-auto"
-              alt="Frame"
-              src="/frame-141.svg"
+              alt=""
+              src="/vectorCoracao.svg"
             />
           </div>
         </div>
