@@ -29,7 +29,7 @@ export const Desktop = (): JSX.Element => {
           src="/group-5.png"
         >*/}
 
-        <div className="absolute top-4 pb-8 left-[200px] w-[351px] h-[42px] bg-[#397bff]">
+        <div className="absolute top-4 pb-8 left-[160px] w-[351px] h-[42px] bg-[#397bff]">
          
 
             <div className="flex justify-items-stretch right-[35px]">
