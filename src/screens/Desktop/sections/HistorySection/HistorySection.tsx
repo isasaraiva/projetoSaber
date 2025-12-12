@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../../../../components/ui/button";
+import "./HistorySection.css"
 
 export const HistorySection = (): JSX.Element => {
   const curvedTextLetters = [
@@ -152,7 +153,7 @@ export const HistorySection = (): JSX.Element => {
   return (
     <section className="relative w-full bg-[#d5f48c] py-[91px] px-4">
       <div className="max-w-[1440px] mx-auto">
-        <div className="relative mb-[103px] mx-auto max-w-[1149px]">
+        <div className=" comeco relative mb-[103px] mx-auto max-w-[1149px]">
           <img
             className="w-full h-auto"
             alt="O Começo de Uma Transformação Educacional"
@@ -161,7 +162,7 @@ export const HistorySection = (): JSX.Element => {
         </div>
 
         <div className="relative max-w-[1149px] mx-auto">
-          <div className="flex justify-center mb-[153px]">
+          <div className=" ariosto flex justify-center mb-[153px]">
             <img src="/frameAriosto.png" alt="" />
           </div>
             
@@ -174,7 +175,7 @@ export const HistorySection = (): JSX.Element => {
               src="/quote-right-1-1.svg"
             />
 
-            <div className="flex flex-col gap-8 ">
+            <div className=" fraseClaudio flex flex-col gap-8 ">
               <p className="flex-1 [font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] text-[32px] text-right tracking-[0] leading-[normal]">
               O Letramento em Saúde capacita estudantes a transformar
               conhecimento em atitudes saudáveis para a vida toda.

@@ -1,4 +1,5 @@
 import React from "react";
+import "./IllustrationSection.css";
 
 export const IllustrationSection = (): JSX.Element => {
   return (

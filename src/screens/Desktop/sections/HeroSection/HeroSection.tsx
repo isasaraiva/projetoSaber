@@ -1,37 +1,24 @@
 import React from "react";
+import "./HeroSection.css";
 
 export const HeroSection = (): JSX.Element => {
   return (
-    <section className="relative w-full bg-[#0346c8] py-16 px-8 overflow-hidden" id="inicio">
+    <section className=" hero-pai relative w-full bg-[#0346c8] py-16 px-8 overflow-hidden" id="inicio">
       <div className="relative max-w-[1440px] mx-auto min-h-[862px]">
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-start">
-          <div className="flex flex-col">
-            <h1 className="[font-family:'Paytone_One',Helvetica] font-normal text-[#d5f48c] p-16 text-[49px] tracking-[1.50px] leading-[56px] max-w-[683px]">
+          <div className="flex flex-col mt-10">
+            <h1 className="[font-family:'Neulis_Cursive-SemiBold',Helvetica] font-semibold text-[#d5f48c] p-16 text-[49px] tracking-[1.50px] leading-[56px] max-w-[683px] hero-title">
               Um movimento chamado{" "}
-              <span className="text-[#c391ea]">SABER</span> que transforma conhecimento em atitudes de cuidado,
+              <span className="text-[#c391ea] ">SABER</span> que transforma conhecimento em atitudes de cuidado,
               ensinando nossos alunos a cuidar de si, do outro e da comunidade.
             </h1>
-
-            
-
-            {/* <img
-              className="w-full max-w-[837px] p-20 h-auto"
-              alt="Group"
-              src="/group-2.png"
-            />
-
-            <p className="[font-family:'Libre_Franklin',Helvetica] p-20 font-normal text-[#c5b3ff] text-[32px] tracking-[0] pt-0 leading-[normal] max-w-[900px]">
-              Um movimento que transforma conhecimento em atitudes de cuidado,
-              ensinando nossos alunos a cuidar de si, do outro e da comunidade.
-            </p> */}
           </div>
 
-          <div className="relative flex items-center justify-center lg:justify-end pt-12">
-          
-
+          <div className="relative flex items-center justify-center lg:justify-end ">
+           
             <img
-              className="relative z-10 left-36 top-10 w-[130%] max-w-[784px] h-auto"
-              alt=""
+              className=" hero-img-heart pt-12 relative z-10 left-36 top-10 w-[130%] max-w-[784px] h-auto"
+              alt="Frame"
               src="/vectorCoracao.svg"
             />
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import "./ImportanceSection.css";
 
 export const ImportanceSection = (): JSX.Element => {
   return (
@@ -11,10 +12,11 @@ export const ImportanceSection = (): JSX.Element => {
             src="/Grafico da Jornada.png"
           />
         </div>
-<div className="mb-16 flex flex-col items-center z-10"> 
+<div className=" importanceMb mb-16 flex flex-col items-center z-10"> 
+  
   <div> <img className="w-20 h-20 mix-blend-multiply" src="team.gif" /></div>
        
-        <div className="flex justify-center ">
+        <div className="  importanceTitle flex justify-center ">
 
           <h2 className="max-w-[489px] [font-family:'Neulis_Cursive-SemiBold',Helvetica] font-semibold text-[#0346c8] text-[49px] text-center tracking-[1.50px] leading-[56px]">
             Por que o projeto é importante?
@@ -23,7 +25,7 @@ export const ImportanceSection = (): JSX.Element => {
 </div>
 
 
-        <div className="flex justify-center">
+        <div className=" importanceText flex justify-center">
           <p className="max-w-[991px] [font-family:'Libre_Franklin',Helvetica] font-normal text-[#0346c8] text-[27.8px] text-center tracking-[0] leading-[normal]">
             A infância e a adolescência são fases decisivas na construção de
             hábitos que acompanharão a vida adulta. É nesse período que

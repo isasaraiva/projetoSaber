@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
+import "./ImageWrapperSection.css";
 
 const thematicAxes = [
   {
@@ -64,13 +65,13 @@ export const ImageWrapperSection = (): JSX.Element => {
 				</div>
 
 				<div className="mb-24 pt-10">
-					<h2 className="text-center [font-family:'Neulis_Cursive-Bold',Helvetica] font-bold text-[#0346c8] text-[32px] tracking-[0] leading-normal mb-12">
+					<h2 className=" text-center [font-family:'Neulis_Cursive-Bold',Helvetica] font-bold text-[#0346c8] text-[32px] tracking-[0] leading-normal mb-12">
 						Público-Alvo
 					</h2>
 
-					<div className="flex flex-col lg:flex-row items-center justify-center gap-8 px-8">
-						<div className="flex-1 max-w-[255px]">
-							<p className="[font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] text-2xl tracking-[0] leading-normal text-left lg:text-right">
+					<div className=" colTextPublic flex flex-col lg:flex-row items-center justify-center gap-8 px-8">
+						<div className="flex-1 max-w-[255px] ">
+							<p className="textoPublico [font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] tracking-[0] leading-normal text-left lg:text-right">
 								{targetAudiences[0]}
 							</p>
 						</div>
@@ -84,10 +85,10 @@ export const ImageWrapperSection = (): JSX.Element => {
 						</div>
 
 						<div className="flex-1 max-w-[302px] flex flex-col gap-4">
-							<p className="[font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] text-2xl tracking-[0] leading-normal">
+							<p className="textoPublico [font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8]  tracking-[0] leading-normal">
 								{targetAudiences[1]}
 							</p>
-							<p className="[font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] text-2xl tracking-[0] leading-normal">
+							<p className="textoPublico [font-family:'Libre_Franklin',Helvetica] font-bold text-[#0346c8] tracking-[0] leading-normal">
 								{targetAudiences[2]}
 							</p>
 						</div>

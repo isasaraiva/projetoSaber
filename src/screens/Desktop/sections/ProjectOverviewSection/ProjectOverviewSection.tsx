@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Card, CardContent } from "../../../../components/ui/card";
+import "./ProjectOverviewSection.css";
 
 const objectives = [
   {
@@ -21,18 +22,18 @@ export const ProjectOverviewSection = (): JSX.Element => {
     <section id="project-overview" className="relative w-full bg-[#387bfe] py-8 px-4">
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 mb-16">
-          <div className="flex-1 lg:max-w-[600px] lg:ml-[132px]">
-            <div className="mb-8 pt-10" >
+          <div className="sobre-pai flex-1 lg:max-w-[600px] lg:ml-[132px]">
+            <div className="sobreImgTitulo mb-8 pt-10" >
               <img src="sobreOsaber.png" alt="" />
             </div>
 
-            <div className="mt-24 mb-12">
-              <div className="mb-6">
-                <h3 className="[font-family:'Neulis_Cursive-SemiBold',Helvetica] font-semibold text-[#d5f48c] text-[32px] tracking-[0] leading-[36px]">
+            <div className=" sobreTexto-pai mt-24 mb-12">
+              <div className=" mb-6">
+                <h3 className="sobreTitulo [font-family:'Neulis_Cursive-SemiBold',Helvetica] font-semibold text-[#d5f48c] text-[32px] tracking-[0] leading-[36px]">
                   O impacto comunitário no presente e no futuro
                 </h3>
               </div>
-              <p className="[font-family:'Libre_Franklin',Helvetica] font-semibold text-[#c5b3ff] text-2xl tracking-[0] leading-[normal]">
+              <p className="text-center md:text-left lg:text-left sobreTexto [font-family:'Libre_Franklin',Helvetica] font-semibold text-[#c5b3ff] tracking-[0] leading-[normal] text-3xl">
                 Essa geração de jovens terá domínio de seus hábitos e poderá ter
                 uma vida mais saudável quando forem adultos. Porém, eles também
                 se tornam agentes ativos dentro de seus círculos sociais desde
@@ -41,7 +42,7 @@ export const ProjectOverviewSection = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col items-end lg:mr-0">
+          <div className="flex-1 flex flex-col items-end">
             <Badge className="bg-[#0346c8] text-[#c5b3ff] hover:bg-[#0346c8] [font-family:'Libre_Franklin',Helvetica] font-semibold text-base px-8 py-4 mb-6 rounded-none">
               Projeto piloto aprovado no âmbito do Edital Conexão SESI nº
               01/2025
@@ -82,7 +83,7 @@ export const ProjectOverviewSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="flex justify-center px-4 lg:px-[130px] mt-16">
+        <div className="flex justify-center px-4 lg:px-[130px] mt-16 hidden lg:block md:block">
           <Card 
             className="w-full max-w-[1176px] rounded-[40px] border-0 cursor-pointer"
             onMouseEnter={() => setIsHovered(true)}
@@ -90,7 +91,7 @@ export const ProjectOverviewSection = (): JSX.Element => {
           >
             <CardContent className="p-0">
               <img
-                className="w-full h-[418px] object-cover transition-opacity duration-300"
+                className="w-full h-[450px] transition-opacity duration-300"
                 alt="Pattern texto"
                 src={isHovered ? "/cardRoxo.png" : "/CardBranco.png"}
               />

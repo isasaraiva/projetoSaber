@@ -1,4 +1,5 @@
 import React from "react";
+import "./NavigationBarSection.css";
 
 const navLinks = [
   { text: "Inicio", active: true },
@@ -45,43 +46,46 @@ export const NavigationBarSection = (): JSX.Element => {
     }
   };
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full h-[122px] bg-[#397bff] flex items-center justify-between px-[153px]">
-  <div className="flex-shrink-0">
-    <img className="w-[162px] h-[74px]" alt="Logo" src="/group-10.png" />
-  </div>
+   <nav className="fixed top-0 left-0 z-50 w-full bg-[#397bff] px-4 py-3 sm:px-10">
+  <div className="flex items-center justify-between w-full mx-auto overflow-x-hidden h-20">
 
-  <div className="flex items-center gap-[51px] left-[531px] top-[57px]">
-    {navLinks.map((link, index) => (
-      <div
-        key={index}
-        onClick={() => handleNavClick(link.text)}
-        className={`flex items-center justify-center [font-family:'Poppins',Helvetica] text-base tracking-[0] leading-[normal] whitespace-nowrap cursor-pointer ${
-          selectedNav === link.text
-            ? link.text === "O Projeto"
+    {/* LOGO ESQUERDA */}
+    <img
+      className=" logosaber w-auto h-20 flex-shrink-0 overflow-hidden"
+      src="/testeLogoSaber.svg"
+      alt="logo"
+      
+    />
+
+    {/* LINKS — RESPONSIVOS E SEM SCROLL */}
+    <div className="linksNav flex flex-col sm:flex-row gap-20 sm:gap-6 justify-center items-center flex-grow">
+      {navLinks.map((link, index) => (
+        <div
+          key={index}
+          onClick={() => handleNavClick(link.text)}
+          className={`cursor-pointer ${
+            selectedNav === link.text
               ? "font-bold text-[#d5f48c]"
-              : "font-bold text-[#d5f48c]"
-            : "font-normal text-[#ededed]"
-        }`}
-      >
-        {link.text}
-      </div>
-    ))}
-  </div>
-
-  <div className="w-[351px] h-[122px] bg-[#397bff] gap-[10px] flex flex-col items-end justify-center relative">
-   
-    
-    <div className="flex items-center top-[56px] right-[35px]">
-      <img
-        className="w-[200px] h-[60px]"
-        alt="Partner logo 1"
-        src="/iniciativasesi.png"
-      />
-      
-      
+              : "text-[#ededed]"
+          }`}
+        >
+          {link.text}
+        </div>
+      ))}
     </div>
+
+    {/* LOGO DIREITA */}
+    <img
+      className="h-8 sm:h-14 object-contain flex-shrink-0"
+      src="/iniciativasesi.png"
+      alt="parceiro"
+    />
   </div>
 </nav>
 
+
+
+
   );
 };
+
